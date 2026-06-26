@@ -63,6 +63,23 @@
       text-transform: uppercase;
       color: var(--chrome);
     }
+    .step-dot span {
+      color: #FFFFFF !important;
+      opacity: 1 !important;
+    }
+    .step-dot div {
+      color: #FFFFFF !important;
+      border-color: rgba(255,255,255,0.7) !important;
+      background: rgba(255,255,255,0.15) !important;
+    }
+    .step-dot.active div {
+      background: var(--burgundy) !important;
+      border-color: var(--burgundy-light) !important;
+    }
+    .step-dot.completed div {
+      background: rgba(107,29,42,0.4) !important;
+      border-color: var(--burgundy-light) !important;
+    }
 
     /* Burgundy text */
     .text-burgundy { color: var(--burgundy-light); }
@@ -351,22 +368,22 @@
 
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1px; background:rgba(255,255,255,0.04);">
       <div class="card reveal d1" style="padding:40px 36px;">
-        <div class="eyebrow" style="margin-bottom:20px; color:var(--burgundy-light);">01</div>
+        <div class="eyebrow" style="margin-bottom:20px; color:rgba(232,228,220,0.7);">01</div>
         <h3 class="font-display" style="font-size:1.8rem; font-weight:400; color:var(--off-white); margin-bottom:16px;">College Guys</h3>
         <p style="font-size:13px; color:rgba(232,228,220,0.5); line-height:1.8;">For young men who want to level up their physique, confidence, and presence fast.</p>
       </div>
       <div class="card reveal d2" style="padding:40px 36px;">
-        <div class="eyebrow" style="margin-bottom:20px; color:var(--burgundy-light);">02</div>
+        <div class="eyebrow" style="margin-bottom:20px; color:rgba(232,228,220,0.7);">02</div>
         <h3 class="font-display" style="font-size:1.8rem; font-weight:400; color:var(--off-white); margin-bottom:16px;">Gym Bros</h3>
         <p style="font-size:13px; color:rgba(232,228,220,0.5); line-height:1.8;">For lifters who are stuck, plateaued, or tired of spinning their wheels.</p>
       </div>
       <div class="card reveal d3" style="padding:40px 36px;">
-        <div class="eyebrow" style="margin-bottom:20px; color:var(--burgundy-light);">03</div>
+        <div class="eyebrow" style="margin-bottom:20px; color:rgba(232,228,220,0.7);">03</div>
         <h3 class="font-display" style="font-size:1.8rem; font-weight:400; color:var(--off-white); margin-bottom:16px;">Enhanced Users</h3>
         <p style="font-size:13px; color:rgba(232,228,220,0.5); line-height:1.8;">For men who want smarter direction, better awareness, and fewer mistakes.</p>
       </div>
       <div class="card reveal d4" style="padding:40px 36px;">
-        <div class="eyebrow" style="margin-bottom:20px; color:var(--burgundy-light);">04</div>
+        <div class="eyebrow" style="margin-bottom:20px; color:rgba(232,228,220,0.7);">04</div>
         <h3 class="font-display" style="font-size:1.8rem; font-weight:400; color:var(--off-white); margin-bottom:16px;">Looks Maxxers</h3>
         <p style="font-size:13px; color:rgba(232,228,220,0.5); line-height:1.8;">For men who want a sharper, clearer, and more masculine looking face.</p>
       </div>
@@ -553,19 +570,19 @@
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1px; background:rgba(255,255,255,0.03);">
 
       <div class="reveal d1" style="padding:52px 44px; background:var(--surface);">
-        <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.3em; color:var(--burgundy-light); margin-bottom:28px;">01</div>
+        <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.3em; color:rgba(232,228,220,0.7); margin-bottom:28px;">01</div>
         <h3 class="font-display" style="font-size:1.7rem; font-weight:400; color:var(--off-white); margin-bottom:20px; line-height:1.2;">Real-World Perspective</h3>
         <p style="font-size:13px; color:rgba(232,228,220,0.45); line-height:1.8;">I live the lifestyle and understand the exact world my audience is trying to enter.</p>
       </div>
 
       <div class="reveal d2" style="padding:52px 44px; background:var(--surface);">
-        <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.3em; color:var(--burgundy-light); margin-bottom:28px;">02</div>
+        <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.3em; color:rgba(232,228,220,0.7); margin-bottom:28px;">02</div>
         <h3 class="font-display" style="font-size:1.7rem; font-weight:400; color:var(--off-white); margin-bottom:20px; line-height:1.2;">No Generic Advice</h3>
         <p style="font-size:13px; color:rgba(232,228,220,0.45); line-height:1.8;">Every call is based on your current body, goals, experience, and questions.</p>
       </div>
 
       <div class="reveal d3" style="padding:52px 44px; background:var(--surface);">
-        <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.3em; color:var(--burgundy-light); margin-bottom:28px;">03</div>
+        <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.3em; color:rgba(232,228,220,0.7); margin-bottom:28px;">03</div>
         <h3 class="font-display" style="font-size:1.7rem; font-weight:400; color:var(--off-white); margin-bottom:20px; line-height:1.2;">High-Level Strategy</h3>
         <p style="font-size:13px; color:rgba(232,228,220,0.45); line-height:1.8;">You get clear direction across physique, enhancement, confidence, and execution.</p>
       </div>
@@ -621,467 +638,64 @@
 </section>
 
 <!-- ======= CONTACT ======= -->
-<section id="contact" style="padding:100px 32px; background:var(--ink); position:relative; overflow:hidden;">
-  <div class="burgundy-glow" style="width:500px; height:500px; top:0; left:50%; transform:translateX(-50%); opacity:0.6;"></div>
+<section id="contact" style="padding:100px 32px; background:var(--ink);">
+  <div style="max-width:600px; margin:0 auto; text-align:center;">
 
-  <div style="max-width:700px; margin:0 auto; position:relative; z-index:1;">
-    <div class="reveal" style="text-align:center; margin-bottom:60px;">
-      <p class="eyebrow" style="margin-bottom:20px;">Contact</p>
-      <h2 class="font-display" style="font-size:clamp(2rem, 4vw, 3.5rem); font-weight:300; color:var(--off-white); line-height:1.1; margin-bottom:16px;">Get In Touch</h2>
-      <div class="rule" style="width:60px; margin:24px auto;"></div>
-      <p style="font-size:14px; color:rgba(232,228,220,0.4); line-height:1.8;">Want to book a full strategy call, free questionnaire call, or have any questions? Reach out directly.</p>
-      <p style="font-size:13px; color:rgba(232,228,220,0.6); line-height:1.8; margin-top:12px;">I highly recommend completing the intake form before booking a call.</p>
-      <a href="#intake" style="display:inline-block; margin-top:16px; font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.25em; text-transform:uppercase; background:transparent; color:var(--off-white); padding:13px 32px; border:1px solid rgba(232,228,220,0.25); text-decoration:none; transition:all 0.3s;" onmouseover="this.style.borderColor='rgba(232,228,220,0.6)'; this.style.color='#fff'" onmouseout="this.style.borderColor='rgba(232,228,220,0.25)'; this.style.color='var(--off-white)'">Complete Intake Form →</a>
-    </div>
+    <p style="font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.35em; text-transform:uppercase; color:var(--chrome); margin-bottom:20px;">Contact</p>
+    <h2 style="font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:300; color:var(--off-white); margin-bottom:16px;">Get In Touch</h2>
+    <div style="width:60px; height:1px; background:linear-gradient(90deg, var(--burgundy-dark), var(--burgundy-light)); margin:24px auto 36px;"></div>
+    <p style="font-size:14px; color:rgba(232,228,220,0.6); line-height:1.8; margin-bottom:8px;">Want to book a call or have any questions? Reach out directly.</p>
+    <p style="font-size:13px; color:rgba(232,228,220,0.6); line-height:1.8; margin-bottom:48px;">I highly recommend completing the intake form before booking a call.</p>
 
-    <!-- Quick contact buttons -->
-    <div class="reveal d1" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:48px;">
-      <a href="mailto:dillanpsutton@gmail.com" style="display:flex; align-items:center; justify-content:center; gap:10px; padding:18px; border:1px solid rgba(255,255,255,0.07); background:var(--surface-raised); color:var(--off-white); text-decoration:none; font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; transition:all 0.3s;" onmouseover="this.style.borderColor='rgba(26,47,107,0.5)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
-        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-        Email Me
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:400px; margin:0 auto 48px;">
+      <a href="mailto:dillanpsutton@gmail.com" style="display:flex; align-items:center; justify-content:center; gap:10px; padding:20px; border:1px solid rgba(255,255,255,0.1); background:#181818; color:rgba(232,228,220,0.8); text-decoration:none; font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; transition:all 0.3s;" onmouseover="this.style.borderColor='rgba(26,47,107,0.6)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+        ✉ Email Me
       </a>
-      <a href="sms:+13108549550" style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; padding:18px; border:1px solid rgba(255,255,255,0.07); background:var(--surface-raised); color:var(--off-white); text-decoration:none; transition:all 0.3s;" onmouseover="this.style.borderColor='rgba(26,47,107,0.5)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
-        <div style="display:flex; align-items:center; gap:10px;">
-          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
-          <span style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase;">Text Me</span>
-        </div>
-        <span style="font-family:'DM Sans',sans-serif; font-size:12px; color:rgba(232,228,220,0.6); letter-spacing:0.05em;">(310) 854-9550</span>
+      <a href="sms:+13108549550" style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; padding:20px; border:1px solid rgba(255,255,255,0.1); background:#181818; color:rgba(232,228,220,0.8); text-decoration:none; transition:all 0.3s;" onmouseover="this.style.borderColor='rgba(26,47,107,0.6)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+        <span style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase;">💬 Text Me</span>
+        <span style="font-size:12px; color:rgba(168,168,179,0.5); margin-top:4px;">(310) 854-9550</span>
       </a>
     </div>
 
-    <div class="reveal d1" style="display:flex; align-items:center; gap:16px; margin-bottom:48px;">
+    <div style="display:flex; align-items:center; gap:16px; max-width:600px; margin:0 auto 40px;">
       <div style="flex:1; height:1px; background:rgba(255,255,255,0.05);"></div>
-      <span style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; color:rgba(232,228,220,0.55); text-transform:uppercase;">Or send a message</span>
+      <span style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; color:rgba(168,168,179,0.3); text-transform:uppercase;">Or send a message</span>
       <div style="flex:1; height:1px; background:rgba(255,255,255,0.05);"></div>
     </div>
 
-    <!-- Contact form -->
-    <form class="reveal d2" action="https://formspree.io/f/mdajrnwv" method="POST" style="display:flex; flex-direction:column; gap:14px;"><input type="hidden" name="_subject" value="New message from Dillan Sutton website" />
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          <label style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(232,228,220,0.6);">Name</label>
-          <input type="text" name="name" placeholder="Your name" required style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); color:var(--off-white); padding:14px 16px; font-family:'DM Sans',sans-serif; font-size:13px; outline:none; transition:border-color 0.3s;" onfocus="this.style.borderColor='rgba(26,47,107,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.07)'" />
+    <form action="https://formspree.io/f/mdajrnwv" method="POST" style="max-width:600px; margin:0 auto; text-align:left;">
+      <input type="hidden" name="_subject" value="New message from Dillan Sutton website">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;">
+        <div>
+          <label style="display:block; font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(168,168,179,0.5); margin-bottom:8px;">Name</label>
+          <input type="text" name="name" placeholder="Your name" required style="width:100%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); color:#E8E4DC; padding:14px 16px; font-family:'DM Sans',sans-serif; font-size:13px; outline:none; box-sizing:border-box;">
         </div>
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          <label style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(232,228,220,0.6);">Email</label>
-          <input type="email" name="email" placeholder="your@email.com" required style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); color:var(--off-white); padding:14px 16px; font-family:'DM Sans',sans-serif; font-size:13px; outline:none; transition:border-color 0.3s;" onfocus="this.style.borderColor='rgba(26,47,107,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.07)'" />
+        <div>
+          <label style="display:block; font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(168,168,179,0.5); margin-bottom:8px;">Email</label>
+          <input type="email" name="email" placeholder="your@email.com" required style="width:100%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); color:#E8E4DC; padding:14px 16px; font-family:'DM Sans',sans-serif; font-size:13px; outline:none; box-sizing:border-box;">
         </div>
       </div>
-      <div style="display:flex; flex-direction:column; gap:8px;">
-        <label style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(232,228,220,0.6);">Message</label>
-        <textarea name="message" placeholder="I'd like to book a call, intake form completed." required rows="5" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); color:var(--off-white); padding:14px 16px; font-family:'DM Sans',sans-serif; font-size:13px; outline:none; transition:border-color 0.3s; resize:none;" onfocus="this.style.borderColor='rgba(26,47,107,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.07)'"></textarea>
+      <div style="margin-bottom:14px;">
+        <label style="display:block; font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(168,168,179,0.5); margin-bottom:8px;">Message</label>
+        <textarea name="message" placeholder="Tell me about your goals..." required rows="5" style="width:100%; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); color:#E8E4DC; padding:14px 16px; font-family:'DM Sans',sans-serif; font-size:13px; outline:none; resize:none; box-sizing:border-box;"></textarea>
       </div>
-      <button type="submit" class="btn-primary" style="width:100%; text-align:center; cursor:pointer; border:none;">Send Message</button>
-      <p id="form-success" style="display:none; text-align:center; font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.2em; color:rgba(26,47,107,0.9); text-transform:uppercase; padding:12px;">Message sent. I'll be in touch.</p>
+      <button type="submit" style="width:100%; font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.25em; text-transform:uppercase; background:#1A2F6B; color:#fff; padding:16px; border:1px solid #2A4A9B; cursor:pointer;">Send Message</button>
     </form>
+
   </div>
 </section>
-
 
 <!-- ======= INTAKE FORM ======= -->
 <section id="intake" style="padding:100px 32px; background:var(--charcoal); position:relative; overflow:hidden;">
-  <div class="burgundy-glow" style="width:500px; height:500px; top:0; right:0; opacity:0.5;"></div>
-
-  <div style="max-width:760px; margin:0 auto; position:relative; z-index:1;">
-
-    <div class="reveal" style="text-align:center; margin-bottom:60px;">
+  <div style="max-width:780px; margin:0 auto; position:relative; z-index:1;">
+    <div style="text-align:center; margin-bottom:60px;">
       <p class="eyebrow" style="margin-bottom:20px;">Intake Form</p>
-      <h2 class="font-display" style="font-size:clamp(2rem, 4vw, 3.5rem); font-weight:300; color:var(--off-white); line-height:1.1; margin-bottom:16px;">Physique &amp; Optimization Intake</h2>
-      <div class="rule" style="width:60px; margin:24px auto;"></div>
-      <p style="font-size:13px; color:rgba(232,228,220,0.8); line-height:1.8;">Please fill out before booking a call.</p>
+      <h2 class="font-display" style="font-size:clamp(2rem, 4vw, 3.5rem); font-weight:300; color:var(--off-white); line-height:1.1; margin-bottom:16px;">Before Your Call</h2>
+      <div style="width:60px; height:1px; background:linear-gradient(90deg, var(--burgundy-dark), var(--burgundy-light)); margin:24px auto;"></div>
+      <p style="font-size:14px; color:rgba(232,228,220,0.5); line-height:1.8;">Complete this before your consultation so I can prepare and make the most of our time together.</p>
     </div>
-
-    <!-- Step indicator -->
-    <div id="step-indicator" style="display:flex; align-items:center; justify-content:center; gap:0; margin-bottom:52px;">
-      <div class="step-dot active" data-step="1" style="display:flex; flex-direction:column; align-items:center; gap:6px; cursor:pointer;">
-        <div style="width:36px; height:36px; border:2px solid var(--burgundy-light); background:var(--burgundy); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:11px; color:#FFFFFF; transition:all 0.3s; font-weight:600;">1</div>
-        <span style="font-family:'Cinzel',serif; font-size:8px; letter-spacing:0.2em; color:var(--burgundy-light); font-weight:600;">INFO</span>
-      </div>
-      <div style="width:40px; height:1px; background:rgba(255,255,255,0.15); margin-bottom:18px;"></div>
-      <div class="step-dot" data-step="2" style="display:flex; flex-direction:column; align-items:center; gap:6px; cursor:pointer;">
-        <div style="width:36px; height:36px; border:1px solid rgba(255,255,255,0.5); background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:11px; color:rgba(255,255,255,0.9); transition:all 0.3s;">2</div>
-        <span style="font-family:'Cinzel',serif; font-size:8px; letter-spacing:0.2em; color:rgba(255,255,255,0.8);">GOALS</span>
-      </div>
-      <div style="width:40px; height:1px; background:rgba(255,255,255,0.15); margin-bottom:18px;"></div>
-      <div class="step-dot" data-step="3" style="display:flex; flex-direction:column; align-items:center; gap:6px; cursor:pointer;">
-        <div style="width:36px; height:36px; border:1px solid rgba(255,255,255,0.5); background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:11px; color:rgba(255,255,255,0.9); transition:all 0.3s;">3</div>
-        <span style="font-family:'Cinzel',serif; font-size:8px; letter-spacing:0.2em; color:rgba(255,255,255,0.8);">SETUP</span>
-      </div>
-      <div style="width:40px; height:1px; background:rgba(255,255,255,0.15); margin-bottom:18px;"></div>
-      <div class="step-dot" data-step="4" style="display:flex; flex-direction:column; align-items:center; gap:6px; cursor:pointer;">
-        <div style="width:36px; height:36px; border:1px solid rgba(255,255,255,0.5); background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:11px; color:rgba(255,255,255,0.9); transition:all 0.3s;">4</div>
-        <span style="font-family:'Cinzel',serif; font-size:8px; letter-spacing:0.2em; color:rgba(255,255,255,0.8);">PHOTOS & FILES</span>
-      </div>
-    </div>
-
-    <form id="intake-form" action="https://formspree.io/f/mdajrnwv" method="POST">
-
-      <!-- SECTION 1 -->
-      <div class="intake-section" id="section-1">
-        <p class="eyebrow" style="margin-bottom:32px; color:#6A8FDB; font-size:11px;">01 — Personal Info</p>
-        <div style="display:flex; flex-direction:column; gap:16px;">
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-            <div style="display:flex; flex-direction:column; gap:8px;">
-              <label class="intake-label">Name *</label>
-              <input type="text" name="name" required class="intake-input" placeholder="Full name"/>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:8px;">
-              <label class="intake-label">Age *</label>
-              <input type="number" name="age" required class="intake-input" placeholder="e.g. 24"/>
-            </div>
-          </div>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-            <div style="display:flex; flex-direction:column; gap:8px;">
-              <label class="intake-label">Height / Weight *</label>
-              <input type="text" name="height_weight" required class="intake-input" placeholder="e.g. 5'11 / 185 lbs"/>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:8px;">
-              <label class="intake-label">Phone Number</label>
-              <input type="tel" name="phone" class="intake-input" placeholder="(310) 000-0000"/>
-            </div>
-          </div>
-          <div style="display:flex; flex-direction:column; gap:8px;">
-            <label class="intake-label">Email Address *</label>
-            <input type="email" name="email" required class="intake-input" placeholder="your@email.com"/>
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 2 -->
-      <div class="intake-section" id="section-2" style="display:none;">
-        <p class="eyebrow" style="margin-bottom:12px; color:#1A2F6B;">02 — Goals &amp; Expectations</p>
-        <p style="font-size:12px; color:rgba(232,228,220,0.65); margin-bottom:32px; line-height:1.7;">e.g. Build muscle, Lose fat, Recomp, TRT optimization, Bloodwork review, Cycle planning, Peptide guidance, General health, Performance, side effect mitigation, improving appearance</p>
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          <label class="intake-label">What are your goals / expectations? *</label>
-          <textarea name="goals" required class="intake-input" rows="6" placeholder="Describe your goals in as much detail as you'd like..."></textarea>
-        </div>
-      </div>
-
-      <!-- SECTION 3 -->
-      <div class="intake-section" id="section-3" style="display:none;">
-        <p class="eyebrow" style="margin-bottom:32px; color:#6A8FDB; font-size:11px;">03 — Current Setup</p>
-        <div style="display:flex; flex-direction:column; gap:24px;">
-
-          <div>
-            <p style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.25em; color:rgba(232,228,220,0.8); text-transform:uppercase; margin-bottom:16px;">Training</p>
-            <div style="display:flex; flex-direction:column; gap:14px;">
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                  <label class="intake-label">Days per week</label>
-                  <input type="text" name="training_days" class="intake-input" placeholder="e.g. 5"/>
-                </div>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                  <label class="intake-label">Years lifting</label>
-                  <input type="text" name="years_lifting" class="intake-input" placeholder="e.g. 3 years"/>
-                </div>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Program currently running</label>
-                <input type="text" name="program" class="intake-input" placeholder="e.g. PPL, custom, none"/>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Step count / cardio</label>
-                <input type="text" name="cardio" class="intake-input" placeholder="e.g. 8k steps/day, 2x cardio/week"/>
-              </div>
-            </div>
-          </div>
-
-          <div class="rule"></div>
-
-          <div>
-            <p style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.25em; color:rgba(232,228,220,0.8); text-transform:uppercase; margin-bottom:16px;">Nutrition</p>
-            <div style="display:flex; flex-direction:column; gap:14px;">
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                  <label class="intake-label">Estimated calories</label>
-                  <input type="text" name="calories" class="intake-input" placeholder="e.g. 3000"/>
-                </div>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                  <label class="intake-label">Protein (g/day)</label>
-                  <input type="text" name="protein" class="intake-input" placeholder="e.g. 200g"/>
-                </div>
-              </div>
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                  <label class="intake-label">Track food? (Y/N)</label>
-                  <input type="text" name="track_food" class="intake-input" placeholder="Y / N"/>
-                </div>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                  <label class="intake-label">Dietary restrictions</label>
-                  <input type="text" name="restrictions" class="intake-input" placeholder="e.g. none, lactose intolerant"/>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="rule"></div>
-
-          <div>
-            <p style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.25em; color:rgba(232,228,220,0.8); text-transform:uppercase; margin-bottom:16px;">Enhancement</p>
-            <div style="display:flex; flex-direction:column; gap:14px;">
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Current cycle (if applicable)</label>
-                <textarea name="current_cycle" class="intake-input" rows="3" placeholder="Compounds, doses, week number..."></textarea>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Previous cycles</label>
-                <textarea name="previous_cycles" class="intake-input" rows="3" placeholder="List any previous cycles..."></textarea>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Any future planned cycles</label>
-                <textarea name="planned_cycles" class="intake-input" rows="2" placeholder="What are you planning next?"></textarea>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Current / previous supplement &amp; peptide routine</label>
-                <textarea name="supplements" class="intake-input" rows="3" placeholder="List all supplements and peptides..."></textarea>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Do you take any ancillary drugs? (e.g. Aromasin, Telmisartan)</label>
-                <textarea name="ancillaries" class="intake-input" rows="2" placeholder="If so, what and what doses?"></textarea>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Side effects / symptoms currently or previously experienced</label>
-                <p style="font-size:11px; color:rgba(232,228,220,0.6); margin-bottom:8px; line-height:1.6;">e.g. Low energy, Low libido, Mood swings, Anxiety, Depression, Water retention, Poor sleep, Acne, Poor recovery, Digestion issues, High BP</p>
-                <textarea name="side_effects" class="intake-input" rows="3" placeholder="List any side effects..."></textarea>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Side effects that concern you most / priority to mitigate</label>
-                <textarea name="priority_side_effects" class="intake-input" rows="3" placeholder="What are your biggest concerns?"></textarea>
-              </div>
-              <div style="display:flex; flex-direction:column; gap:8px;">
-                <label class="intake-label">Have you experienced / are you prone to hair loss?</label>
-                <input type="text" name="hair_loss" class="intake-input" placeholder="Y / N / History of..."/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 4 -->
-      <div class="intake-section" id="section-4" style="display:none;">
-        <p class="eyebrow" style="margin-bottom:16px; color:var(--burgundy-light); font-size:11px;">04 — Photos & Bloodwork</p>
-        <p style="font-size:13px; color:rgba(232,228,220,0.8); line-height:1.9; margin-bottom:20px;">Having bloodwork uploaded before our first consult isn't necessary but it helps me a ton and guides many of my decisions. Preferably I'd like to see:</p>
-        <div style="border-left:2px solid rgba(107,29,42,0.5); padding-left:20px; margin-bottom:20px;">
-          <p style="font-size:13px; color:rgba(232,228,220,0.75); line-height:2.2;">
-            • Comprehensive Metabolic Panel (CMP)<br/>
-            • Lipid Panel (Total Cholesterol, LDL, HDL, Triglycerides)<br/>
-            • Total Testosterone<br/>
-            • Estradiol (E2) (ultrasensitive preferred if available)<br/>
-            • SHBG<br/>
-            • Free Testosterone<br/>
-            • Thyroid Panel (TSH, Free T4, Free T3)<br/>
-            • Cystatin C<br/>
-            • Prolactin<br/>
-            • ApoB (Apolipoprotein B)
-          </p>
-        </div>
-        <p style="font-size:13px; color:rgba(232,228,220,0.6); line-height:1.9; margin-bottom:28px;">Or if you already have bloodwork on hand and you want to use that I can work with whatever markers you provide.</p>
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); padding:28px 32px;">
-          <p style="font-size:13px; color:rgba(232,228,220,0.6); line-height:1.9;">
-            Email your physique photos and bloodwork (if you have it) to <a href="mailto:dillanpsutton@gmail.com" style="color:var(--burgundy-light); text-decoration:none;">dillanpsutton@gmail.com</a> along with your name. Please send everything in one email.
-          </p>
-        </div>
-      </div>
-
-      <!-- Navigation buttons -->
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:40px;">
-        <button type="button" id="prev-btn" onclick="intakeNav(-1)" style="display:none; font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; background:transparent; color:rgba(232,228,220,0.5); padding:13px 28px; border:1px solid rgba(255,255,255,0.1); cursor:pointer; transition:all 0.3s;" onmouseover="this.style.color='var(--off-white)'; this.style.borderColor='rgba(255,255,255,0.3)'" onmouseout="this.style.color='rgba(232,228,220,0.5)'; this.style.borderColor='rgba(255,255,255,0.1)'">← Previous</button>
-        <div></div>
-        <button type="button" id="next-btn" onclick="intakeNav(1)" style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; background:#1A2F6B; color:#E8E4DC; padding:13px 28px; border:1px solid #243F8B; cursor:pointer; transition:all 0.3s;" onmouseover="this.style.background='#243F8B'" onmouseout="this.style.background='#1A2F6B'">Next →</button>
-        <button type="submit" id="submit-btn" style="display:none; font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; background:#1A2F6B; color:#E8E4DC; padding:13px 28px; border:1px solid #243F8B; cursor:pointer; transition:all 0.3s;" onmouseover="this.style.background='#243F8B'" onmouseout="this.style.background='#1A2F6B'">Submit Intake →</button>
-      </div>
-
-      <p id="intake-success" style="display:none; text-align:center; font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.2em; color:#1A2F6B; text-transform:uppercase; padding:20px; margin-top:20px; border:1px solid rgba(26,47,107,0.3);">Intake received. I'll review before our call.</p>
-
-    </form>
+    <iframe src="https://tally.so/embed/689DvP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0" title="Intake Form" style="border:none; width:100%; min-height:1200px; display:block;"></iframe>
   </div>
 </section>
 
-<style>
-  .intake-label {
-    font-family: 'Cinzel', serif;
-    font-size: 9px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(232,228,220,0.85);
-  }
-  .intake-input {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.07);
-    color: var(--off-white);
-    padding: 14px 16px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    outline: none;
-    transition: border-color 0.3s;
-    width: 100%;
-  }
-  .intake-input:focus {
-    border-color: rgba(26,47,107,0.7);
-  }
-  .intake-input::placeholder {
-    color: rgba(232,228,220,0.45);
-  }
-  textarea.intake-input { resize: vertical; }
-  input[type="file"].intake-input { color: rgba(232,228,220,0.75); }
-</style>
 
-<script>
-  var intakeStep = 1;
-  var totalSteps = 4;
-
-  function intakeNav(dir) {
-    var current = document.getElementById('section-' + intakeStep);
-    if (current) current.style.display = 'none';
-    intakeStep += dir;
-    var next = document.getElementById('section-' + intakeStep);
-    if (next) next.style.display = 'block';
-    updateIntakeUI();
-  }
-
-  function updateIntakeUI() {
-    document.getElementById('prev-btn').style.display = intakeStep > 1 ? 'block' : 'none';
-    document.getElementById('next-btn').style.display = intakeStep < totalSteps ? 'block' : 'none';
-    document.getElementById('submit-btn').style.display = intakeStep === totalSteps ? 'block' : 'none';
-
-    document.querySelectorAll('.step-dot').forEach(function(dot, i) {
-      var stepNum = i + 1;
-      var box = dot.querySelector('div');
-      var label = dot.querySelector('span');
-      if (stepNum === intakeStep) {
-        box.style.background = '#1A2F6B';
-        box.style.borderColor = '#1A2F6B';
-        box.style.color = '#E8E4DC';
-        label.style.color = '#1A2F6B';
-      } else if (stepNum < intakeStep) {
-        box.style.background = 'rgba(26,47,107,0.3)';
-        box.style.borderColor = 'rgba(26,47,107,0.5)';
-        box.style.color = 'rgba(232,228,220,0.6)';
-        label.style.color = 'rgba(26,47,107,0.7)';
-      } else {
-        box.style.background = 'transparent';
-        box.style.borderColor = 'rgba(255,255,255,0.1)';
-        box.style.color = 'rgba(255,255,255,0.3)';
-        label.style.color = 'rgba(255,255,255,0.2)';
-      }
-    });
-  }
-
-  var intakeForm = document.getElementById('intake-form');
-  if (intakeForm) {
-    intakeForm.addEventListener('submit', async function(e) {
-      e.preventDefault();
-      var btn = document.getElementById('submit-btn');
-      btn.textContent = 'Sending...';
-      btn.style.opacity = '0.6';
-      btn.disabled = true;
-      try {
-        var res = await fetch('https://formspree.io/f/mdajrnwv', {
-          method: 'POST',
-          body: new FormData(intakeForm),
-          headers: { 'Accept': 'application/json' }
-        });
-        var data = await res.json();
-        if (res.ok) {
-          intakeForm.querySelectorAll('input, textarea').forEach(function(el) { el.value = ''; });
-          document.getElementById('intake-success').style.display = 'block';
-          btn.style.display = 'none';
-          document.getElementById('prev-btn').style.display = 'none';
-        } else {
-          btn.textContent = 'Error — try again';
-          btn.style.opacity = '1';
-          btn.disabled = false;
-          console.error('Formspree error:', data);
-        }
-      } catch(err) {
-        btn.textContent = 'Error — try again';
-        btn.style.opacity = '1';
-        btn.disabled = false;
-        console.error('Submit error:', err);
-      }
-    });
-  }
-</script>
-
-<!-- ======= FOOTER ======= -->
-<footer style="border-top:1px solid rgba(255,255,255,0.04); padding:64px 32px 40px; background:var(--ink);">
-  <div style="max-width:1200px; margin:0 auto;">
-    <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:40px; margin-bottom:56px;">
-
-      <div>
-        <div style="font-family:'Cinzel',serif; font-size:16px; letter-spacing:0.15em; color:var(--off-white); margin-bottom:10px;">DILLAN SUTTON</div>
-        <div style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.25em; text-transform:uppercase; color:rgba(232,228,220,0.6);">Physique. Enhancement. Ascension.</div>
-      </div>
-
-      <div style="display:flex; flex-wrap:wrap; gap:32px; align-items:center;">
-        <a href="#" style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(168,168,179,0.45); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--off-white)'" onmouseout="this.style.color='rgba(168,168,179,0.45)'">Instagram</a>
-        <a href="#" style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(168,168,179,0.45); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--off-white)'" onmouseout="this.style.color='rgba(168,168,179,0.45)'">TikTok</a>
-        <a href="mailto:dillanpsutton@gmail.com" style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(168,168,179,0.45); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--off-white)'" onmouseout="this.style.color='rgba(168,168,179,0.45)'">Email</a>
-        <a href="#consultations" style="font-family:'Cinzel',serif; font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(168,168,179,0.45); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--off-white)'" onmouseout="this.style.color='rgba(168,168,179,0.45)'" href="#contact">Book Consultation</a>
-      </div>
-    </div>
-
-    <div class="rule" style="margin-bottom:28px;"></div>
-
-    <p style="font-size:11px; color:rgba(232,228,220,0.5); letter-spacing:0.05em; line-height:1.7;">
-      Educational consulting only. Not medical advice.
-    </p>
-  </div>
-</footer>
-
-
-<script>
-  // Sticky nav
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 40);
-  });
-
-  // Scroll reveals
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  // Mobile nav
-  function toggleNav() {
-    document.getElementById('mobile-nav').classList.toggle('open');
-  }
-  function closeNav() {
-    document.getElementById('mobile-nav').classList.remove('open');
-  }
-
-  // Responsive hero grid
-  function handleResize() {
-    const heroGrid = document.querySelector('[style*="grid-template-columns:1fr 1fr"]');
-    if (heroGrid && window.innerWidth < 768) {
-      heroGrid.style.gridTemplateColumns = '1fr';
-    } else if (heroGrid) {
-      heroGrid.style.gridTemplateColumns = '1fr 1fr';
-    }
-    const aboutGrid = document.querySelectorAll('[style*="grid-template-columns:1fr 1fr"]');
-    aboutGrid.forEach(g => {
-      if (window.innerWidth < 768) {
-        g.style.gridTemplateColumns = '1fr';
-      } else {
-        g.style.gridTemplateColumns = '1fr 1fr';
-      }
-    });
-  }
-  window.addEventListener('resize', handleResize);
-  handleResize();
-
-
-  // Force anchor scroll fallback
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-</script>
-</body>
-</html>
